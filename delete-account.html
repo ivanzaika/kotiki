@@ -7,70 +7,235 @@
 <style>
   body { font-family: -apple-system, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
          max-width: 680px; margin: 0 auto; padding: 24px; line-height: 1.55; color: #2b2b2b; }
-  h1 { font-size: 1.5rem; margin-top: 1.6em; }
+  h1 { font-size: 1.5rem; }
   h2 { font-size: 1.1rem; margin-top: 1.4em; }
-  code { background: #f3f3f3; padding: 1px 5px; border-radius: 4px; }
-  hr { border: none; border-top: 1px solid #e2e2e2; margin: 2.5em 0; }
   a { color: #c0563f; }
   .muted { color: #666; font-size: 0.92rem; }
+  .langs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0.2em 0 0.5em; }
+  .langs button {
+    font: inherit; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.03em;
+    padding: 6px 16px; cursor: pointer; border: 1px solid #c0563f;
+    border-radius: 999px; background: #fff; color: #c0563f;
+    transition: background .12s, color .12s;
+  }
+  .langs button:hover { background: #f7e9e5; }
+  .langs button.active, .langs button.active:hover { background: #c0563f; color: #fff; }
+  .doc { margin-top: 2em; }
+  .doc h1 { margin-top: 0; }
 </style>
 </head>
 <body>
 
-<h1>Delete your Kotiki account &amp; data</h1>
-<p>Kotiki is a cozy pixel-art cat game by Ivan Zaika. You can permanently delete
-your account and all associated data at any time.</p>
+<nav class="langs">
+  <button data-lang="en" title="English">EN</button>
+  <button data-lang="nl" title="Nederlands">NL</button>
+  <button data-lang="fr" title="Français">FR</button>
+  <button data-lang="es" title="Español">ES</button>
+  <button data-lang="de" title="Deutsch">DE</button>
+  <button data-lang="ru" title="Русский">RU</button>
+</nav>
 
-<h2>From inside the app</h2>
-<ol>
-  <li>Open <b>Settings</b> (the gear icon).</li>
-  <li>In the <b>Cloud Save</b> section, tap <b>Delete account &amp; data</b>.</li>
-  <li>Confirm. Your account and all progress are permanently deleted — both in the
-      cloud and on this device — and the app returns to the start screen.</li>
-</ol>
+<section class="doc" data-lang="en" lang="en">
+  <h1>Delete your Kotiki account &amp; data</h1>
+  <p>Kotiki is a cozy pixel-art cat game by Ivan Zaika. You can permanently delete
+  your account and all associated data at any time.</p>
 
-<h2>By email</h2>
-<p>If you can no longer open the app, email
-<a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> from the email
-address linked to your account (Apple or Google), or include your in-app
-<b>Account ID</b> (shown in Settings → Cloud Save). We will delete your account
-and data within 30 days.</p>
+  <h2>From inside the app</h2>
+  <ol>
+    <li>Open <b>Settings</b> (the gear icon).</li>
+    <li>In the <b>Cloud Save</b> section, tap <b>Delete account &amp; data</b>.</li>
+    <li>Confirm. Your account and all progress are permanently deleted — both in the
+        cloud and on this device — and the app returns to the start screen.</li>
+  </ol>
 
-<h2>What is deleted</h2>
-<p>Your Firebase sign-in account, your cloud save (cats, room, progress), and the
-local game data on your device. Deletion is permanent and cannot be undone, and we
-do not keep a copy. Purchase records are held by the App Store / Google Play, not
-by us, and are not affected by this request.</p>
+  <h2>By email</h2>
+  <p>If you can no longer open the app, email
+  <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> from the email
+  address linked to your account (Apple or Google), or include your in-app
+  <b>Account ID</b> (shown in Settings → Cloud Save). We will delete your account
+  and data within 30 days.</p>
 
-<p class="muted">Contact: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+  <h2>What is deleted</h2>
+  <p>Your Firebase sign-in account, your cloud save (cats, room, progress), and the
+  local game data on your device. Deletion is permanent and cannot be undone, and we
+  do not keep a copy. Purchase records are held by the App Store / Google Play, not
+  by us, and are not affected by this request.</p>
 
-<hr>
+  <p class="muted">Contact: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+</section>
 
-<h1>Удаление аккаунта и данных Kotiki</h1>
-<p>Kotiki — уютная пиксельная игра про котика (разработчик Иван Заика). Вы можете в
-любой момент безвозвратно удалить свой аккаунт и все связанные данные.</p>
+<section class="doc" data-lang="nl" lang="nl">
+  <h1>Je Kotiki-account en gegevens verwijderen</h1>
+  <p>Kotiki is een gezellig pixelart-kattenspel van Ivan Zaika. Je kunt je account
+  en alle bijbehorende gegevens op elk moment permanent verwijderen.</p>
 
-<h2>В приложении</h2>
-<ol>
-  <li>Откройте <b>Настройки</b> (значок шестерёнки).</li>
-  <li>В разделе <b>Облачное сохранение</b> нажмите <b>Удалить аккаунт и данные</b>.</li>
-  <li>Подтвердите. Аккаунт и весь прогресс удаляются безвозвратно — и в облаке, и на
-      этом устройстве — и приложение возвращается на стартовый экран.</li>
-</ol>
+  <h2>In de app</h2>
+  <ol>
+    <li>Open <b>Instellingen</b> (het tandwielpictogram).</li>
+    <li>Tik in het gedeelte <b>Cloud-opslag</b> op <b>Account en gegevens verwijderen</b>.</li>
+    <li>Bevestig. Je account en alle voortgang worden permanent verwijderd — zowel in
+        de cloud als op dit apparaat — en de app keert terug naar het startscherm.</li>
+  </ol>
 
-<h2>По почте</h2>
-<p>Если приложение недоступно, напишите на
-<a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> с почты, привязанной
-к аккаунту (Apple или Google), либо укажите ваш <b>Account ID</b> из раздела
-Настройки → Облачное сохранение. Мы удалим аккаунт и данные в течение 30 дней.</p>
+  <h2>Per e-mail</h2>
+  <p>Als je de app niet meer kunt openen, mail dan naar
+  <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> vanaf het
+  e-mailadres dat aan je account is gekoppeld (Apple of Google), of vermeld je
+  <b>Account-ID</b> in de app (te zien bij Instellingen → Cloud-opslag). We
+  verwijderen je account en gegevens binnen 30 dagen.</p>
 
-<h2>Что удаляется</h2>
-<p>Ваш аккаунт входа Firebase, облачное сохранение (котики, комната, прогресс) и
-локальные данные игры на устройстве. Удаление безвозвратно, копию мы не храним.
-История покупок хранится в App Store / Google Play, не у нас, и этим запросом не
-затрагивается.</p>
+  <h2>Wat wordt verwijderd</h2>
+  <p>Je Firebase-aanmeldaccount, je cloud-opslag (katten, kamer, voortgang) en de
+  lokale spelgegevens op je apparaat. Verwijdering is permanent en kan niet ongedaan
+  worden gemaakt; we bewaren geen kopie. Aankoopgegevens worden beheerd door de App
+  Store / Google Play, niet door ons, en worden door dit verzoek niet beïnvloed.</p>
 
-<p class="muted">Контакт: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+  <p class="muted">Contact: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+</section>
+
+<section class="doc" data-lang="fr" lang="fr">
+  <h1>Supprimer votre compte et vos données Kotiki</h1>
+  <p>Kotiki est un jeu de chat en pixel art tout doux d'Ivan Zaika. Vous pouvez
+  supprimer définitivement votre compte et toutes les données associées à tout moment.</p>
+
+  <h2>Depuis l'application</h2>
+  <ol>
+    <li>Ouvrez les <b>Réglages</b> (l'icône d'engrenage).</li>
+    <li>Dans la section <b>Sauvegarde cloud</b>, touchez <b>Supprimer le compte et les données</b>.</li>
+    <li>Confirmez. Votre compte et toute votre progression sont définitivement
+        supprimés — dans le cloud et sur cet appareil — et l'application revient à
+        l'écran d'accueil.</li>
+  </ol>
+
+  <h2>Par e-mail</h2>
+  <p>Si vous ne pouvez plus ouvrir l'application, écrivez à
+  <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> depuis l'adresse
+  e-mail liée à votre compte (Apple ou Google), ou indiquez votre
+  <b>Account ID</b> visible dans Réglages → Sauvegarde cloud. Nous supprimerons votre
+  compte et vos données sous 30 jours.</p>
+
+  <h2>Ce qui est supprimé</h2>
+  <p>Votre compte de connexion Firebase, votre sauvegarde cloud (chats, pièce,
+  progression) et les données de jeu locales sur votre appareil. La suppression est
+  définitive et irréversible, et nous n'en conservons aucune copie. Les historiques
+  d'achat sont gérés par l'App Store / Google Play, pas par nous, et ne sont pas
+  concernés par cette demande.</p>
+
+  <p class="muted">Contact : <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+</section>
+
+<section class="doc" data-lang="es" lang="es">
+  <h1>Eliminar tu cuenta y datos de Kotiki</h1>
+  <p>Kotiki es un acogedor juego de gatos en pixel art de Ivan Zaika. Puedes eliminar
+  permanentemente tu cuenta y todos los datos asociados en cualquier momento.</p>
+
+  <h2>Desde la aplicación</h2>
+  <ol>
+    <li>Abre los <b>Ajustes</b> (el icono de engranaje).</li>
+    <li>En la sección <b>Guardado en la nube</b>, toca <b>Eliminar cuenta y datos</b>.</li>
+    <li>Confirma. Tu cuenta y todo el progreso se eliminan permanentemente — tanto en
+        la nube como en este dispositivo — y la aplicación vuelve a la pantalla de inicio.</li>
+  </ol>
+
+  <h2>Por correo electrónico</h2>
+  <p>Si ya no puedes abrir la aplicación, escribe a
+  <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> desde la
+  dirección de correo vinculada a tu cuenta (Apple o Google), o incluye tu
+  <b>Account ID</b> (visible en Ajustes → Guardado en la nube). Eliminaremos tu cuenta
+  y datos en un plazo de 30 días.</p>
+
+  <h2>Qué se elimina</h2>
+  <p>Tu cuenta de inicio de sesión de Firebase, tu guardado en la nube (gatos,
+  habitación, progreso) y los datos locales del juego en tu dispositivo. La
+  eliminación es permanente e irreversible, y no conservamos ninguna copia. Los
+  registros de compras los gestionan App Store / Google Play, no nosotros, y no se
+  ven afectados por esta solicitud.</p>
+
+  <p class="muted">Contacto: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+</section>
+
+<section class="doc" data-lang="de" lang="de">
+  <h1>Dein Kotiki-Konto und deine Daten löschen</h1>
+  <p>Kotiki ist ein gemütliches Pixel-Art-Katzenspiel von Ivan Zaika. Du kannst dein
+  Konto und alle zugehörigen Daten jederzeit dauerhaft löschen.</p>
+
+  <h2>In der App</h2>
+  <ol>
+    <li>Öffne die <b>Einstellungen</b> (das Zahnrad-Symbol).</li>
+    <li>Tippe im Bereich <b>Cloud-Speicher</b> auf <b>Konto &amp; Daten löschen</b>.</li>
+    <li>Bestätige. Dein Konto und dein gesamter Fortschritt werden dauerhaft gelöscht
+        — sowohl in der Cloud als auch auf diesem Gerät — und die App kehrt zum
+        Startbildschirm zurück.</li>
+  </ol>
+
+  <h2>Per E-Mail</h2>
+  <p>Wenn du die App nicht mehr öffnen kannst, schreibe an
+  <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> von der mit
+  deinem Konto verknüpften E-Mail-Adresse (Apple oder Google), oder gib deine
+  <b>Account-ID</b> aus der App an (zu sehen unter Einstellungen → Cloud-Speicher).
+  Wir löschen dein Konto und deine Daten innerhalb von 30 Tagen.</p>
+
+  <h2>Was gelöscht wird</h2>
+  <p>Dein Firebase-Anmeldekonto, dein Cloud-Speicher (Katzen, Zimmer, Fortschritt) und
+  die lokalen Spieldaten auf deinem Gerät. Die Löschung ist dauerhaft und kann nicht
+  rückgängig gemacht werden; wir behalten keine Kopie. Kaufdaten werden vom App Store /
+  Google Play verwaltet, nicht von uns, und sind von dieser Anfrage nicht betroffen.</p>
+
+  <p class="muted">Kontakt: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+</section>
+
+<section class="doc" data-lang="ru" lang="ru">
+  <h1>Удаление аккаунта и данных Kotiki</h1>
+  <p>Kotiki — уютная пиксельная игра про котика (разработчик Иван Заика). Вы можете в
+  любой момент безвозвратно удалить свой аккаунт и все связанные данные.</p>
+
+  <h2>В приложении</h2>
+  <ol>
+    <li>Откройте <b>Настройки</b> (значок шестерёнки).</li>
+    <li>В разделе <b>Облачное сохранение</b> нажмите <b>Удалить аккаунт и данные</b>.</li>
+    <li>Подтвердите. Аккаунт и весь прогресс удаляются безвозвратно — и в облаке, и на
+        этом устройстве — и приложение возвращается на стартовый экран.</li>
+  </ol>
+
+  <h2>По почте</h2>
+  <p>Если приложение недоступно, напишите на
+  <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a> с почты,
+  привязанной к аккаунту (Apple или Google), либо укажите ваш <b>Account ID</b> из
+  раздела Настройки → Облачное сохранение. Мы удалим аккаунт и данные в течение 30 дней.</p>
+
+  <h2>Что удаляется</h2>
+  <p>Ваш аккаунт входа Firebase, облачное сохранение (котики, комната, прогресс) и
+  локальные данные игры на устройстве. Удаление безвозвратно, копию мы не храним.
+  История покупок хранится в App Store / Google Play, не у нас, и этим запросом не
+  затрагивается.</p>
+
+  <p class="muted">Контакт: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+</section>
+
+<script>
+  (function () {
+    var supported = ['en', 'nl', 'fr', 'es', 'de', 'ru'];
+    var buttons = document.querySelectorAll('.langs button');
+    var sections = document.querySelectorAll('section.doc');
+    function show(lang) {
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].hidden = sections[i].getAttribute('data-lang') !== lang;
+      }
+      for (var j = 0; j < buttons.length; j++) {
+        buttons[j].classList.toggle(
+          'active', buttons[j].getAttribute('data-lang') === lang);
+      }
+      document.documentElement.lang = lang;
+    }
+    for (var k = 0; k < buttons.length; k++) {
+      buttons[k].addEventListener('click', function () {
+        show(this.getAttribute('data-lang'));
+      });
+    }
+    var nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    show(supported.indexOf(nav) !== -1 ? nav : 'en');
+  })();
+</script>
 
 </body>
 </html>

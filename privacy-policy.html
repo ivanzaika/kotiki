@@ -17,11 +17,32 @@
   a { color: #b5642d; }
   ul { padding-left: 20px; }
   footer { margin-top: 40px; color: #8a6f5c; font-size: 0.85rem; }
+  .langs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+  .langs button {
+    font: inherit; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.03em;
+    padding: 6px 16px; cursor: pointer; border: 1px solid #b5642d;
+    border-radius: 999px; background: transparent; color: #b5642d;
+    transition: background .12s, color .12s;
+  }
+  .langs button:hover { background: #f3e2d3; }
+  .langs button.active, .langs button.active:hover { background: #b5642d; color: #fff7ef; }
+  .note { color: #8a6f5c; font-size: 0.82rem; margin-top: 8px; }
 </style>
 </head>
 <body>
+
+<nav class="langs">
+  <button data-lang="en" title="English">EN</button>
+  <button data-lang="nl" title="Nederlands">NL</button>
+  <button data-lang="fr" title="Français">FR</button>
+  <button data-lang="es" title="Español">ES</button>
+  <button data-lang="de" title="Deutsch">DE</button>
+  <button data-lang="ru" title="Русский">RU</button>
+</nav>
+
+<section class="doc" data-lang="en" lang="en">
   <h1>Kotiki — Privacy Policy</h1>
-  <p class="updated">Last updated: June 1, 2026</p>
+  <p class="updated">Last updated: June 26, 2026</p>
 
   <p>Kotiki Cats (“the app”, “we”) is a cozy pixel-art virtual pet game. We care about your
   privacy and keep data collection to the minimum needed to run the game. This policy
@@ -55,28 +76,29 @@
 
   <h2>In-app purchases</h2>
   <p>The app offers optional crystal packs for decorations and accessories. Purchases are
-  processed entirely by Apple through the App Store. <strong>We do not receive or store
-  your payment information</strong> (card numbers, billing details, etc.).</p>
+  processed entirely by the platform’s store — Apple through the App Store on iOS, or Google
+  through Google Play on Android. <strong>We do not receive or store your payment
+  information</strong> (card numbers, billing details, etc.).</p>
 
   <h2>Third-party services</h2>
   <p>We rely on the following providers, each governed by its own privacy policy:</p>
   <ul>
     <li>Google Firebase — Authentication, Firestore (cloud save), and Analytics.</li>
     <li>Sign in with Apple and Google Sign-In — optional account linking.</li>
-    <li>Apple App Store — in-app purchases.</li>
+    <li>Apple App Store and Google Play — in-app purchases.</li>
   </ul>
 
   <h2>Children’s privacy</h2>
-  <p>Kotiki is rated 4+ and is family-friendly. We do not knowingly collect personal
-  information from children, and the app contains no behavioral advertising or cross-app
-  tracking. If you believe a child has provided personal information, contact us and we
-  will remove it.</p>
+  <p>Kotiki is family-friendly and suitable for all ages. We do not knowingly collect
+  personal information from children, and the app contains no behavioral advertising or
+  cross-app tracking. If you believe a child has provided personal information, contact us
+  and we will remove it.</p>
 
   <h2>Data retention and your choices</h2>
   <ul>
     <li>Your cloud save is kept while your account exists so your progress isn’t lost.</li>
-    <li>You can reset local and cloud save data from the app’s Settings, or ask us to
-    delete your data by email.</li>
+    <li>You can delete your account and all data from the app’s Settings (“Delete account
+    &amp; data”), or ask us to delete your data by email.</li>
     <li>Unlinked anonymous accounts are automatically cleaned up over time.</li>
   </ul>
 
@@ -84,5 +106,388 @@
   <p>Questions or data requests: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
 
   <footer>© 2026 Kotiki</footer>
+</section>
+
+<section class="doc" data-lang="nl" lang="nl">
+  <h1>Kotiki — Privacybeleid</h1>
+  <p class="updated">Laatst bijgewerkt: 26 juni 2026</p>
+
+  <p>Kotiki Cats (“de app”, “wij”) is een gezellig pixelart-spel met een virtueel huisdier.
+  We hechten waarde aan je privacy en verzamelen niet meer gegevens dan nodig is om het spel
+  te laten werken. Dit beleid legt uit wat er wordt verzameld, waarom, en welke keuzes je hebt.</p>
+
+  <h2>Welke gegevens we verzamelen</h2>
+  <ul>
+    <li><strong>Spelvoortgang en instellingen.</strong> Je kat, kamer, voorwerpen, munten en
+    kristallen en je voorkeuren worden opgeslagen zodat je verder kunt spelen. Dit wordt op je
+    apparaat bewaard en, als back-up, in onze cloud (Google Firebase / Firestore).</li>
+    <li><strong>Een account-identifier in de app.</strong> Om je voortgang op te slaan en te
+    herstellen maken we een anoniem account aan (Firebase Authentication). Dit is een willekeurige
+    identifier en bevat niet je naam of e-mailadres. Je kunt optioneel Inloggen met Apple of
+    Google Sign-In koppelen zodat je opgeslagen spel na een herinstallatie kan worden hersteld —
+    alleen dan wordt een provider-account aan je opgeslagen spel gekoppeld.</li>
+    <li><strong>Gebruiks- en diagnosegegevens.</strong> We gebruiken Firebase Analytics om
+    anonieme gebruiksgegevens te verzamelen (zoals welke schermen en functies worden gebruikt —
+    “productinteractie”) en een apparaat-identifier, om te begrijpen hoe het spel wordt gespeeld
+    en om problemen op te lossen. Deze gegevens zijn <strong>niet gekoppeld aan je
+    identiteit</strong> en worden <strong>niet gebruikt om je te volgen</strong> in andere apps
+    of op websites. Advertentiesignalen zijn uitgeschakeld.</li>
+  </ul>
+
+  <h2>Wat we NIET doen</h2>
+  <ul>
+    <li>We tonen geen advertenties.</li>
+    <li>We verkopen of delen je gegevens niet met datahandelaren.</li>
+    <li>We volgen je niet in apps of op websites van andere bedrijven.</li>
+    <li>We verzamelen niet je contacten, foto’s, locatie of microfoon.</li>
+  </ul>
+
+  <h2>In-app-aankopen</h2>
+  <p>De app biedt optionele kristalpakketten voor decoraties en accessoires. Aankopen worden
+  volledig verwerkt door de winkel van het platform — Apple via de App Store op iOS, of Google
+  via Google Play op Android. <strong>We ontvangen of bewaren je betaalgegevens niet</strong>
+  (kaartnummers, factuurgegevens, enz.).</p>
+
+  <h2>Diensten van derden</h2>
+  <p>We maken gebruik van de volgende aanbieders, elk met een eigen privacybeleid:</p>
+  <ul>
+    <li>Google Firebase — Authentication, Firestore (cloudopslag) en Analytics.</li>
+    <li>Inloggen met Apple en Google Sign-In — optionele accountkoppeling.</li>
+    <li>Apple App Store en Google Play — in-app-aankopen.</li>
+  </ul>
+
+  <h2>Privacy van kinderen</h2>
+  <p>Kotiki is gezinsvriendelijk en geschikt voor alle leeftijden. We verzamelen niet bewust
+  persoonlijke gegevens van kinderen, en de app bevat geen op gedrag gebaseerde advertenties of
+  tracking tussen apps. Als je denkt dat een kind persoonlijke gegevens heeft verstrekt, neem dan
+  contact met ons op en we verwijderen ze.</p>
+
+  <h2>Bewaring van gegevens en jouw keuzes</h2>
+  <ul>
+    <li>Je cloud-opslag wordt bewaard zolang je account bestaat, zodat je voortgang niet verloren
+    gaat.</li>
+    <li>Je kunt je account en alle gegevens verwijderen via de Instellingen van de app (“Account
+    en gegevens verwijderen”), of ons per e-mail vragen je gegevens te verwijderen.</li>
+    <li>Niet-gekoppelde anonieme accounts worden na verloop van tijd automatisch opgeruimd.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Vragen of gegevensverzoeken: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+
+  <footer>© 2026 Kotiki</footer>
+</section>
+
+<section class="doc" data-lang="fr" lang="fr">
+  <h1>Kotiki — Politique de confidentialité</h1>
+  <p class="updated">Dernière mise à jour : 26 juin 2026</p>
+
+  <p>Kotiki Cats (« l’application », « nous ») est un doux jeu d’animal de compagnie virtuel en
+  pixel art. Nous respectons votre vie privée et limitons la collecte de données au strict
+  nécessaire au fonctionnement du jeu. Cette politique explique ce qui est collecté, pourquoi, et
+  quels sont vos choix.</p>
+
+  <h2>Données que nous collectons</h2>
+  <ul>
+    <li><strong>Progression et réglages du jeu.</strong> Votre chat, votre pièce, vos objets, vos
+    pièces et cristaux ainsi que vos préférences sont enregistrés pour vous permettre de continuer
+    à jouer. Ces données sont stockées sur votre appareil et, pour la sauvegarde, dans notre cloud
+    (Google Firebase / Firestore).</li>
+    <li><strong>Un identifiant de compte dans l’application.</strong> Pour enregistrer et restaurer
+    votre progression, nous créons un compte anonyme (Firebase Authentication). Il s’agit d’un
+    identifiant aléatoire qui ne contient ni votre nom ni votre e-mail. Vous pouvez éventuellement
+    associer « Se connecter avec Apple » ou la connexion Google afin de restaurer votre sauvegarde
+    après une réinstallation — ce n’est qu’alors qu’un compte de fournisseur est associé à votre
+    sauvegarde.</li>
+    <li><strong>Données d’utilisation et de diagnostic.</strong> Nous utilisons Firebase Analytics
+    pour collecter des données d’utilisation anonymes (par exemple quels écrans et fonctionnalités
+    sont utilisés — « interaction avec le produit ») et un identifiant d’appareil, afin de comprendre
+    comment le jeu est joué et de corriger les problèmes. Ces données <strong>ne sont pas liées à
+    votre identité</strong> et <strong>ne sont pas utilisées pour vous suivre</strong> sur d’autres
+    applications ou sites web. Les signaux publicitaires sont désactivés.</li>
+  </ul>
+
+  <h2>Ce que nous NE faisons PAS</h2>
+  <ul>
+    <li>Nous n’affichons pas de publicités.</li>
+    <li>Nous ne vendons ni ne partageons vos données avec des courtiers en données.</li>
+    <li>Nous ne vous suivons pas sur les applications ou sites d’autres entreprises.</li>
+    <li>Nous ne collectons pas vos contacts, photos, position ou microphone.</li>
+  </ul>
+
+  <h2>Achats intégrés</h2>
+  <p>L’application propose des packs de cristaux facultatifs pour les décorations et accessoires.
+  Les achats sont entièrement traités par la boutique de la plateforme — Apple via l’App Store sur
+  iOS, ou Google via Google Play sur Android. <strong>Nous ne recevons ni ne conservons vos
+  informations de paiement</strong> (numéros de carte, coordonnées de facturation, etc.).</p>
+
+  <h2>Services tiers</h2>
+  <p>Nous faisons appel aux prestataires suivants, chacun régi par sa propre politique de
+  confidentialité :</p>
+  <ul>
+    <li>Google Firebase — Authentication, Firestore (sauvegarde cloud) et Analytics.</li>
+    <li>Se connecter avec Apple et la connexion Google — association de compte facultative.</li>
+    <li>Apple App Store et Google Play — achats intégrés.</li>
+  </ul>
+
+  <h2>Confidentialité des enfants</h2>
+  <p>Kotiki est familial et convient à tous les âges. Nous ne collectons pas sciemment de données
+  personnelles d’enfants, et l’application ne contient ni publicité comportementale ni suivi entre
+  applications. Si vous pensez qu’un enfant a fourni des données personnelles, contactez-nous et
+  nous les supprimerons.</p>
+
+  <h2>Conservation des données et vos choix</h2>
+  <ul>
+    <li>Votre sauvegarde cloud est conservée tant que votre compte existe, afin que votre
+    progression ne soit pas perdue.</li>
+    <li>Vous pouvez supprimer votre compte et toutes vos données depuis les Réglages de
+    l’application (« Supprimer le compte et les données »), ou nous demander de supprimer vos
+    données par e-mail.</li>
+    <li>Les comptes anonymes non associés sont automatiquement supprimés au fil du temps.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions ou demandes relatives aux données : <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+
+  <footer>© 2026 Kotiki</footer>
+</section>
+
+<section class="doc" data-lang="es" lang="es">
+  <h1>Kotiki — Política de privacidad</h1>
+  <p class="updated">Última actualización: 26 de junio de 2026</p>
+
+  <p>Kotiki Cats («la app», «nosotros») es un acogedor juego de mascota virtual en pixel art.
+  Respetamos tu privacidad y limitamos la recopilación de datos al mínimo necesario para que el
+  juego funcione. Esta política explica qué se recopila, por qué y qué opciones tienes.</p>
+
+  <h2>Datos que recopilamos</h2>
+  <ul>
+    <li><strong>Progreso y ajustes del juego.</strong> Tu gato, tu habitación, tus objetos, tus
+    monedas y cristales y tus preferencias se guardan para que puedas seguir jugando. Esto se
+    almacena en tu dispositivo y, como copia de seguridad, en nuestra nube (Google Firebase /
+    Firestore).</li>
+    <li><strong>Un identificador de cuenta en la app.</strong> Para guardar y restaurar tu progreso
+    creamos una cuenta anónima (Firebase Authentication). Es un identificador aleatorio y no contiene
+    tu nombre ni tu correo. Opcionalmente puedes vincular «Iniciar sesión con Apple» o el inicio de
+    sesión de Google para poder restaurar tu partida tras reinstalar — solo entonces se asocia una
+    cuenta de proveedor a tu partida guardada.</li>
+    <li><strong>Datos de uso y diagnóstico.</strong> Usamos Firebase Analytics para recopilar datos
+    de uso anónimos (como qué pantallas y funciones se utilizan — «interacción con el producto») y un
+    identificador de dispositivo, para entender cómo se juega y solucionar problemas. Estos datos
+    <strong>no están vinculados a tu identidad</strong> y <strong>no se usan para rastrearte</strong>
+    en otras apps o sitios web. Las señales publicitarias están desactivadas.</li>
+  </ul>
+
+  <h2>Lo que NO hacemos</h2>
+  <ul>
+    <li>No mostramos anuncios.</li>
+    <li>No vendemos ni compartimos tus datos con intermediarios de datos.</li>
+    <li>No te rastreamos en apps ni sitios web de otras empresas.</li>
+    <li>No recopilamos tus contactos, fotos, ubicación ni micrófono.</li>
+  </ul>
+
+  <h2>Compras dentro de la app</h2>
+  <p>La app ofrece paquetes de cristales opcionales para decoraciones y accesorios. Las compras las
+  procesa íntegramente la tienda de la plataforma — Apple a través de la App Store en iOS, o Google
+  a través de Google Play en Android. <strong>No recibimos ni almacenamos tu información de
+  pago</strong> (números de tarjeta, datos de facturación, etc.).</p>
+
+  <h2>Servicios de terceros</h2>
+  <p>Utilizamos los siguientes proveedores, cada uno con su propia política de privacidad:</p>
+  <ul>
+    <li>Google Firebase — Authentication, Firestore (guardado en la nube) y Analytics.</li>
+    <li>Iniciar sesión con Apple y el inicio de sesión de Google — vinculación de cuenta opcional.</li>
+    <li>Apple App Store y Google Play — compras dentro de la app.</li>
+  </ul>
+
+  <h2>Privacidad de los niños</h2>
+  <p>Kotiki es apto para toda la familia y para todas las edades. No recopilamos a sabiendas
+  información personal de niños, y la app no contiene publicidad basada en el comportamiento ni
+  seguimiento entre apps. Si crees que un niño ha proporcionado información personal, contáctanos y
+  la eliminaremos.</p>
+
+  <h2>Conservación de datos y tus opciones</h2>
+  <ul>
+    <li>Tu guardado en la nube se conserva mientras exista tu cuenta, para que no se pierda tu
+    progreso.</li>
+    <li>Puedes eliminar tu cuenta y todos los datos desde los Ajustes de la app («Eliminar cuenta y
+    datos»), o pedirnos que eliminemos tus datos por correo electrónico.</li>
+    <li>Las cuentas anónimas no vinculadas se eliminan automáticamente con el tiempo.</li>
+  </ul>
+
+  <h2>Contacto</h2>
+  <p>Preguntas o solicitudes de datos: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+
+  <footer>© 2026 Kotiki</footer>
+</section>
+
+<section class="doc" data-lang="de" lang="de">
+  <h1>Kotiki — Datenschutzerklärung</h1>
+  <p class="updated">Zuletzt aktualisiert: 26. Juni 2026</p>
+
+  <p>Kotiki Cats („die App“, „wir“) ist ein gemütliches Pixel-Art-Spiel mit einem virtuellen
+  Haustier. Uns liegt dein Datenschutz am Herzen, und wir erheben nur die Daten, die für den Betrieb
+  des Spiels nötig sind. Diese Erklärung beschreibt, was erhoben wird, warum, und welche
+  Wahlmöglichkeiten du hast.</p>
+
+  <h2>Welche Daten wir erheben</h2>
+  <ul>
+    <li><strong>Spielfortschritt und Einstellungen.</strong> Deine Katze, dein Zimmer, Gegenstände,
+    Münzen und Kristalle sowie deine Einstellungen werden gespeichert, damit du weiterspielen kannst.
+    Dies wird auf deinem Gerät und, als Sicherung, in unserer Cloud (Google Firebase / Firestore)
+    gespeichert.</li>
+    <li><strong>Eine App-Konto-Kennung.</strong> Um deinen Fortschritt zu speichern und
+    wiederherzustellen, erstellen wir ein anonymes Konto (Firebase Authentication). Es ist eine
+    zufällige Kennung und enthält nicht deinen Namen oder deine E-Mail-Adresse. Du kannst optional
+    „Mit Apple anmelden“ oder die Google-Anmeldung verknüpfen, damit dein Spielstand nach einer
+    Neuinstallation wiederhergestellt werden kann — erst dann wird ein Anbieterkonto mit deinem
+    Spielstand verknüpft.</li>
+    <li><strong>Nutzungs- und Diagnosedaten.</strong> Wir verwenden Firebase Analytics, um anonyme
+    Nutzungsdaten zu erheben (etwa welche Bildschirme und Funktionen genutzt werden —
+    „Produktinteraktion“) sowie eine Gerätekennung, um zu verstehen, wie das Spiel gespielt wird, und
+    um Probleme zu beheben. Diese Daten sind <strong>nicht mit deiner Identität verknüpft</strong> und
+    werden <strong>nicht verwendet, um dich zu verfolgen</strong> über andere Apps oder Websites
+    hinweg. Werbesignale sind deaktiviert.</li>
+  </ul>
+
+  <h2>Was wir NICHT tun</h2>
+  <ul>
+    <li>Wir zeigen keine Werbung.</li>
+    <li>Wir verkaufen oder teilen deine Daten nicht mit Datenhändlern.</li>
+    <li>Wir verfolgen dich nicht über Apps oder Websites anderer Unternehmen hinweg.</li>
+    <li>Wir erfassen nicht deine Kontakte, Fotos, deinen Standort oder dein Mikrofon.</li>
+  </ul>
+
+  <h2>In-App-Käufe</h2>
+  <p>Die App bietet optionale Kristallpakete für Dekorationen und Accessoires. Käufe werden
+  vollständig über den Store der Plattform abgewickelt — Apple über den App Store auf iOS oder Google
+  über Google Play auf Android. <strong>Wir erhalten oder speichern deine Zahlungsdaten
+  nicht</strong> (Kartennummern, Rechnungsdaten usw.).</p>
+
+  <h2>Drittanbieterdienste</h2>
+  <p>Wir nutzen die folgenden Anbieter, die jeweils ihrer eigenen Datenschutzerklärung unterliegen:</p>
+  <ul>
+    <li>Google Firebase — Authentication, Firestore (Cloud-Speicher) und Analytics.</li>
+    <li>Mit Apple anmelden und Google-Anmeldung — optionale Kontoverknüpfung.</li>
+    <li>Apple App Store und Google Play — In-App-Käufe.</li>
+  </ul>
+
+  <h2>Datenschutz von Kindern</h2>
+  <p>Kotiki ist familienfreundlich und für alle Altersgruppen geeignet. Wir erheben nicht wissentlich
+  personenbezogene Daten von Kindern, und die App enthält keine verhaltensbasierte Werbung und kein
+  App-übergreifendes Tracking. Wenn du glaubst, dass ein Kind personenbezogene Daten angegeben hat,
+  kontaktiere uns, und wir löschen sie.</p>
+
+  <h2>Datenaufbewahrung und deine Wahlmöglichkeiten</h2>
+  <ul>
+    <li>Dein Cloud-Speicher wird aufbewahrt, solange dein Konto besteht, damit dein Fortschritt nicht
+    verloren geht.</li>
+    <li>Du kannst dein Konto und alle Daten in den Einstellungen der App löschen („Konto &amp; Daten
+    löschen“) oder uns per E-Mail bitten, deine Daten zu löschen.</li>
+    <li>Nicht verknüpfte anonyme Konten werden mit der Zeit automatisch gelöscht.</li>
+  </ul>
+
+  <h2>Kontakt</h2>
+  <p>Fragen oder Datenanfragen: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+
+  <footer>© 2026 Kotiki</footer>
+</section>
+
+<section class="doc" data-lang="ru" lang="ru">
+  <h1>Kotiki — Политика конфиденциальности</h1>
+  <p class="updated">Обновлено: 26 июня 2026 г.</p>
+
+  <p>Kotiki («приложение», «мы») — уютная пиксельная игра-тамагочи про котиков. Мы бережно
+  относимся к вашей приватности и собираем только те данные, которые нужны для работы игры.
+  Здесь описано, что собирается, зачем и какие у вас есть возможности.</p>
+
+  <h2>Какие данные мы собираем</h2>
+  <ul>
+    <li><strong>Прогресс и настройки игры.</strong> Ваш котик, комната, предметы, монеты и
+    кристаллы, а также настройки сохраняются, чтобы вы могли продолжить игру. Данные хранятся
+    на устройстве и, для резервной копии, в нашем облаке (Google Firebase / Firestore).</li>
+    <li><strong>Идентификатор учётной записи в приложении.</strong> Чтобы сохранять и
+    восстанавливать прогресс, создаётся анонимная учётная запись (Firebase Authentication).
+    Это случайный идентификатор — он не содержит вашего имени или e-mail. По желанию вы можете
+    привязать «Вход с Apple» или «Вход через Google», чтобы восстановить сохранение после
+    переустановки — только тогда аккаунт провайдера связывается с вашим сохранением.</li>
+    <li><strong>Данные об использовании и диагностика.</strong> Мы используем Firebase
+    Analytics для сбора обезличенных данных об использовании (какие экраны и функции
+    задействуются — «взаимодействие с продуктом») и идентификатора устройства, чтобы понимать,
+    как идёт игра, и исправлять проблемы. Эти данные <strong>не связаны с вашей
+    личностью</strong> и <strong>не используются для отслеживания</strong> вас в других
+    приложениях или на сайтах. Рекламные сигналы отключены.</li>
+  </ul>
+
+  <h2>Чего мы НЕ делаем</h2>
+  <ul>
+    <li>Не показываем рекламу.</li>
+    <li>Не продаём и не передаём ваши данные брокерам данных.</li>
+    <li>Не отслеживаем вас в приложениях и на сайтах других компаний.</li>
+    <li>Не собираем контакты, фотографии, геолокацию и микрофон.</li>
+  </ul>
+
+  <h2>Покупки внутри приложения</h2>
+  <p>В приложении есть необязательные наборы кристаллов для украшений и аксессуаров. Покупки
+  полностью обрабатываются магазином платформы — Apple через App Store на iOS или Google через
+  Google Play на Android. <strong>Мы не получаем и не храним ваши платёжные данные</strong>
+  (номера карт, реквизиты и т. п.).</p>
+
+  <h2>Сторонние сервисы</h2>
+  <p>Мы используем следующих поставщиков, у каждого из которых своя политика конфиденциальности:</p>
+  <ul>
+    <li>Google Firebase — Authentication, Firestore (облачное сохранение) и Analytics.</li>
+    <li>«Вход с Apple» и «Вход через Google» — необязательная привязка аккаунта.</li>
+    <li>Apple App Store и Google Play — покупки внутри приложения.</li>
+  </ul>
+
+  <h2>Конфиденциальность детей</h2>
+  <p>Kotiki подходит для всей семьи и для любого возраста. Мы сознательно не собираем
+  персональные данные детей, в приложении нет поведенческой рекламы и межприложенческого
+  отслеживания. Если вы считаете, что ребёнок предоставил персональные данные, напишите нам —
+  и мы их удалим.</p>
+
+  <h2>Хранение данных и ваши права</h2>
+  <ul>
+    <li>Облачное сохранение хранится, пока существует ваша учётная запись, чтобы прогресс не
+    потерялся.</li>
+    <li>Вы можете удалить аккаунт и все данные в настройках приложения («Удалить аккаунт и
+    данные») или попросить нас удалить ваши данные по электронной почте.</li>
+    <li>Непривязанные анонимные учётные записи со временем удаляются автоматически.</li>
+  </ul>
+
+  <h2>Контакты</h2>
+  <p>Вопросы и запросы по данным: <a href="mailto:vanzai.studio@gmail.com">vanzai.studio@gmail.com</a></p>
+
+  <footer>© 2026 Kotiki</footer>
+</section>
+
+<p class="note">This policy was written in English; the other languages are provided for
+convenience, and the English version prevails in case of any discrepancy.</p>
+
+<script>
+  (function () {
+    var supported = ['en', 'nl', 'fr', 'es', 'de', 'ru'];
+    var buttons = document.querySelectorAll('.langs button');
+    var sections = document.querySelectorAll('section.doc');
+    function show(lang) {
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].hidden = sections[i].getAttribute('data-lang') !== lang;
+      }
+      for (var j = 0; j < buttons.length; j++) {
+        buttons[j].classList.toggle(
+          'active', buttons[j].getAttribute('data-lang') === lang);
+      }
+      document.documentElement.lang = lang;
+    }
+    for (var k = 0; k < buttons.length; k++) {
+      buttons[k].addEventListener('click', function () {
+        show(this.getAttribute('data-lang'));
+      });
+    }
+    var nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    show(supported.indexOf(nav) !== -1 ? nav : 'en');
+  })();
+</script>
+
 </body>
 </html>
